@@ -19,14 +19,10 @@ doc:
   - id: authors
   - id: bibliography
 options:
-  - id: logo
-    type: string
-    required: true
-    description: Absolute path to logo image for document footer.
-  - id: styles
-    type: string
-    required: true
-    description: Absolute path to XML styles for docx.
+  - id: hideFooter
+    type: boolean
+    default: false
+    description: Hide MyST logo footer on each page
 files:
   - template.tex
   - logo.png
